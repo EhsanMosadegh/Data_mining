@@ -20,7 +20,10 @@ days_from_start = 30 # days will convert to hrs
 # build the data time ruller- start from a desired datetime
 
 # we need to have a dt period
-datetime_start = dt.datetime(2019, 5, 1, 0, 0, 0)
+yr = 2019
+mon = 6
+day = 1
+datetime_start = dt.datetime(yr, mon, day, 0, 0, 0)
 datetime_end = datetime_start + dt.timedelta(days=days_from_start)
 print('-> start date is: %s' % str(datetime_start))
 # define the period in no of 10min steps
